@@ -157,6 +157,50 @@ a {
   color: gold;
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+.modal-content {
+  background-color: gray;
+  margin: 10% auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 10px;
+  position: relative;
+}
+.close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+.stars span {
+  font-size: 20px;
+  margin-right: 5px;
+}
+.stars .active {
+  color: gold;
+}
+.stars .inactive {
+  color: lightgray;
+}
+
+body.modal-open {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
 #projects {
   margin-top: 100px;
   margin-left: 5%;

@@ -44,42 +44,51 @@
     <section id="skills">
         <h2>Skills</h2>
         <div class="skill-card">
-            <img src="img/html.png" alt="HTML" class="skill-icon">
+          <img src="img/html.png" alt="HTML" class="skill-icon">
             <div class="skill-info">
-              <h3>HTML/CSS</h3>
+              <h3><a href="#" onclick="openModal('html', event)">HTML / CSS</a></h3>
               <p>Webページのフロントエンドに使用</p>
               <div class="stars">★★★☆☆</div>
             </div>
-          </div>
-          <div class="skill-card">
-            <img src="img/js.png" alt="HTML" class="skill-icon">
+        </div>
+        <div class="skill-card">
+          <img src="img/js.png" alt="HTML" class="skill-icon">
             <div class="skill-info">
-              <h3>JavaScript</h3>
+              <h3><a href="#" onclick="openModal('js', event)">JavaScript</a></h3>
               <p><b>React/Node.js</b></p>
               <p>Webページのフロントエンド使用</p>
               <div class="stars">★★★☆☆</div>
             </div>
-          </div>
-          <div class="skill-card">
-            <img src="img/python.png" alt="HTML" class="skill-icon">
+        </div>
+        <div class="skill-card">
+          <img src="img/python.png" alt="HTML" class="skill-icon">
             <div class="skill-info">
-              <h3>Python</h3>
+              <h3><a href="#" onclick="openModal('python', event)">Python</a></h3>
               <p><b>Flask</b></p>
               <p>Webアプリケーションのバックエンド,
                 データ分析や機械学習などに使用</p>
               <div class="stars">★★★★☆</div>
             </div>
-          </div>
-          <div class="skill-card">
-            <img src="img/sql.png" alt="HTML" class="skill-icon">
+        </div>
+        <div class="skill-card">
+          <img src="img/sql.png" alt="HTML" class="skill-icon">
             <div class="skill-info">
-              <h3>SQL</h3>
+              <h3><a href="#" onclick="openModal('sql', event)">SQL</a></h3>
               <p><b>MySQL/PostgreSQL</b></p>
               <p>Webアプリケーションのデータベースとして使用</p>
               <div class="stars">★★★☆☆</div>
             </div>
-          </div>
+        </div>
     </section>
+
+    <div id="skillModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <div id="modalStars" class="stars"></div>
+        <ul id="modalDescription"></ul>
+      </div>
+    </div>
 
     <section id="projects">
         <h2>Projects</h2>
