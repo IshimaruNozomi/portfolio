@@ -1,3 +1,7 @@
+html {
+  scroll-padding-top: 130px; /* ヘッダーの高さに合わせて調整 */
+}
+
 /* ヘッダー全体のスタイル */
 header {
   background: linear-gradient(135deg, royalblue 50%, aqua 100%);
@@ -322,6 +326,11 @@ footer{
 }
 
 @media (max-width: 768px) {
+
+  html {
+    scroll-padding-top: 200px; /* モバイルのヘッダーに合わせて調整 */
+  }
+  
   .projects-grid {
     grid-template-columns: 1fr;
   }
