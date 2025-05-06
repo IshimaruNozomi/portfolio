@@ -161,23 +161,57 @@ a {
   color: gold;
 }
 
-.modal {
+#skillModal {
   display: none;
   position: fixed;
-  z-index: 10;
-  left: 0; top: 0;
-  width: 100%; height: 100%;
-  background-color: rgba(0,0,0,0.5);
-}
-.modal-content {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: gray;
-  margin: 10% auto;
   padding: 20px;
-  width: 80%;
-  max-width: 500px;
   border-radius: 10px;
-  position: relative;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 600px;
+  z-index: 1000;
 }
+
+#modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: none;
+}
+
+/* 星を黄色にするためのスタイル */
+.active {
+  color: gold;
+}
+
+/* 星を灰色にするためのスタイル */
+.inactive {
+  color: white;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  transition: color 0.2s;
+}
+
+.close-button:hover {
+  color: #000;
+}
+
+
 .close {
   position: absolute;
   right: 15px;
@@ -330,7 +364,7 @@ footer{
   html {
     scroll-padding-top: 200px; /* モバイルのヘッダーに合わせて調整 */
   }
-  
+
   .projects-grid {
     grid-template-columns: 1fr;
   }
@@ -390,6 +424,10 @@ footer{
     width: 60px;
     height: 60px;
     margin-bottom: 10px;
+  }
+
+  .modal-content {
+    position: relative;
   }
 
   .projects-grid {
