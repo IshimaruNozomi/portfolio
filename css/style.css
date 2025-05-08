@@ -101,7 +101,7 @@ header h1 {
 nav {
   padding: 10px 0;
   position: relative;
-  left: 15%;
+  left: 40%;
 }
 
 /* ナビゲーションリストのスタイル */
@@ -461,6 +461,7 @@ footer{
   }
 
   nav ul {
+    flex-direction: row;
     flex-direction: column;
     gap: 10px;
   }
