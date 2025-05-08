@@ -1,3 +1,13 @@
+window.addEventListener("load", () => {
+  const overlay = document.getElementById("loadingOverlay");
+  setTimeout(() => {
+    overlay.classList.add("fade-out");
+    setTimeout(() => {
+      overlay.style.display = "none";
+    }, 1000); // フェードアウトアニメーションの時間に合わせる
+  }, 5000); // ローディングバーのアニメーションと一致
+});
+
 const skillData = {
     html: {
       title: "HTML / CSS",
