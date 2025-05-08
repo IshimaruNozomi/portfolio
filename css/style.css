@@ -147,7 +147,6 @@ a {
 }
 
 #Profile {
-  margin-top: 150px;
   margin-top: 100px;
   margin-left: 5%;
   padding: 0 10%;
@@ -195,6 +194,12 @@ a {
   margin-bottom: 20px;
 }
 
+.skill-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
 .skill-card {
   display: flex;
   align-items: center;
@@ -202,7 +207,6 @@ a {
   border: 3px solid royalblue;
   border-radius: 20px;
   padding: 20px;
-  margin-bottom: 20px;
   transition: transform 0.3s;
 }
 
@@ -234,6 +238,7 @@ a {
   font-size: 1.2em;
   color: gold;
 }
+
 
 #skillModal {
   display: none;
@@ -323,6 +328,12 @@ body.modal-open {
   color: white;
   font-size: 2em;
   margin-bottom: 20px;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
 }
 
 .projects-grid {
