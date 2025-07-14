@@ -97,7 +97,7 @@ const skillData = {
         "★★★★★: Dart VMやFlutterエンジンの内部動作を理解し、プラグイン開発や独自ツールの構築ができる"
       ]
     },
-    dart: {
+    php: {
       title: "php",
       level: 1,
       descriptions: [
