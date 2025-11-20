@@ -99,7 +99,7 @@ const skillData = {
     },
     php: {
       title: "php",
-      level: 1,
+      level: 2,
       descriptions: [
         "★☆☆☆☆: 基本的な文法や変数、echo、if文、ループが理解できる",
         "★★☆☆☆: 関数、配列、フォーム処理、簡単なファイル操作ができる",
